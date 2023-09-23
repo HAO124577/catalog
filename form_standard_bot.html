@@ -1,0 +1,64 @@
+<!-- form_standard_bot.html -->
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      font-size: 36px;
+    }
+    .emoji {
+      font-size: 48px;
+    }
+    .button {
+      display: block;
+      width: 200px;
+      height: 50px;
+      margin: 20px auto;
+      background-color: #00FF00;
+      border: none;
+      border-radius: 10px;
+      color: black;
+      font-weight: bold;
+    }
+    .button:hover {
+      background-color: #00CC00;
+    }
+    .form {
+      display: block;
+      width: 300px;
+      margin: 20px auto;
+    }
+    .form input {
+      display: block;
+      width: 280px;
+      height: 30px;
+      margin: 10px auto;
+      border: none;
+      border-radius: 5px;
+    }
+    .form input[type="submit"] {
+      background-color: #00FF00;
+      color: black;
+      font-weight: bold;
+    }
+    .form input[type="submit"]:hover {
+      background-color: #00CC00;
+    }
+  </style>
+</head>
+<body>
+  <h1>ФОРМА</h1>
+  <p class="emoji">😎👍🛒🎁</p>
+  <p>Пожалуйста, заполните свои данные для заказа бота standard:</p>
+  <form class="form" action="submit_standard_bot.html" method="post">
+    <input type="text" name="telegram_teg" placeholder="Введите ваш телеграмм тег" required>
+    <input type="email" name="email" placeholder="Введите ваш email" required>
+    <input type="submit" value="Отправить">
+  </form>
+</body>
+</html>
